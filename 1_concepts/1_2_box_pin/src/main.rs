@@ -43,6 +43,7 @@ impl<T> MutMeSomehow for Box<T>
         (*x) = T::default();
     }
 }
+ 
 
 impl<T> MutMeSomehow for Rc<T>
     where T: Unpin + Default {
