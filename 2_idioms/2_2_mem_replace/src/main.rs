@@ -21,12 +21,8 @@ struct Trinity<T> {
 
 impl<T: Clone> Trinity<T> {
     fn rotate(&mut self) {
-        let a = self.a.clone();
-        let b = self.b.clone();
-        let c = self.c.clone();
-        self.a = b;
-        self.b = c;
-        self.c = a;
+        std::mem::swap(&mut self.a, &mut self.c); // 1 2 3 -> 3 2 1
+        std::mem::swap(&mut self.b, &mut self.a); // 3 2 1 -> 2 3 1
     }
 }
 
