@@ -1,0 +1,10 @@
+[package]
+name = "proc_btmap"
+version = "0.1.0"
+authors = ["ArsileLuci <arsile410@gmail.com>"]
+edition = "2018"
+
+
+[dependencies]
+proc-macro-hack = { version = "0.5" }
+btmap_macro = { path = "../btmap_macro" }
