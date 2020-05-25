@@ -3,3 +3,11 @@ name = "3_6"
 version = "0.1.0"
 edition = "2018"
 publish = false
+
+[dependencies]
+serde = { version ="1.0.110", features = ["derive"] } 
+serde_json = "1.0.53"
+serde_yaml = "0.8.12"
+toml = "0.5.6"
+chrono = {version="0.4",features = ["serde"]}
+humantime-serde = "1.0.0"
