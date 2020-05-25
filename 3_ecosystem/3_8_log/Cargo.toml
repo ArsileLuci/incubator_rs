@@ -3,3 +3,14 @@ name = "3_8"
 version = "0.1.0"
 edition = "2018"
 publish = false
+
+[dependencies]
+slog =  {version = "2.5.2" }
+slog-term = "2.5.0"
+slog-stdlog = "4.0.0"
+slog-async = "2.5.0"
+slog-json = "2.3.0"
+slog-scope = "4.3.0"
+
+log = {version = "0.4.8", features = ["serde"]}
+chrono = "0.4.11"
