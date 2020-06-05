@@ -3,3 +3,15 @@ name = "3_12"
 version = "0.1.0"
 edition = "2018"
 publish = false
+
+[dependencies]
+actix-web = "2.0"
+actix-rt = "1.1.1"
+diesel = { version = "1.4", features = ["sqlite", "r2d2"] }
+libsqlite3-sys = { version = "0.9.1", features = ["bundled"] }
+dotenv = "0.15.0"
+r2d2 = "0.8.8"
+uuid = { version = "0.8.1", features = ["serde", "v4"] }
+serde = {version ="1.0", features = ["derive"]}
+serde_json = "1.0"
+im = "15.0.0"
